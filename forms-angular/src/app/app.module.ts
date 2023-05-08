@@ -11,6 +11,7 @@ import { SucessoCadastroComponent } from "./sucesso-cadastro/sucesso-cadastro.co
 import { MensagemComponent } from './components/mensagem/mensagem.component';
 import { TabelaGenericaComponent } from './components/tabela-generica/tabela-generica.component';
 import { HomeComponent } from './home/home.component';
+import { RadioButtonGenericoComponent } from './components/radio-button-generico/radio-button-generico.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HomeComponent } from './home/home.component';
     MensagemComponent,
     TabelaGenericaComponent,
     HomeComponent,
+    RadioButtonGenericoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

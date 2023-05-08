@@ -1,3 +1,12 @@
 <div class="principal">
-    <app-tabela-generica [nameOfCollumns]="collumnsName" [data]="myData"></app-tabela-generica>
+    <div *ngFor="let option of selectedOption">
+        <input type="radio" name="radioButton" [value]="option" [(ngModel)]="selectedOption">
+        {{ option }}
+      </div>
+      
+      <div [ngSwitch]="selectedOption">
+        <div *ngSwitchCase="RadioButtonOption.Option1" style="background-color: red;">Div vermelha</div>
+        <div *ngSwitchCase="RadioButtonOption.Option2" style="background-color: blue;">Div azul</div>
+        <div *ngSwitchCase="RadioButtonOption.Option3" style="background-color: purple;">Div roxa</div>
+      </div>
 </div>

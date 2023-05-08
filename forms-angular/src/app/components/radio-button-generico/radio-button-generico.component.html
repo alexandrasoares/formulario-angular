@@ -1,0 +1,10 @@
+<label *ngFor="let option of options">
+  <input
+    #option
+    type="radio"
+    name="{{ name }}"
+    [value]="option"
+    (change)="onChange.emit(option.valueOf())"
+  />
+  {{ option }}
+</label>

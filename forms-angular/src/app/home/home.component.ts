@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RadioButtonOption } from '../enum/radio-button.enum';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  selectedOption!: RadioButtonOption;
   collumnsName: string[] = ['Codigo', 'Nome', 'Preço'];
-
   myData: any[] = [
     { name: "Product 1", codeOfProduct: '001', price: 10 },
     { name: "Product 2", codeOfProduct: '002', price: 20 },
@@ -21,6 +22,8 @@ export class HomeComponent implements OnInit {
     { name: "Product 9", codeOfProduct: '009', price: 90 },
     { name: "Product 10", codeOfProduct: '010',  price: 100 },
   ];
+
+  opcoesRadioButton = ['Opcao 1', 'Opcao 2', 'Opcao 3'];
 
   constructor() { }
 
